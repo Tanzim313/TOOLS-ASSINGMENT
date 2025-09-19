@@ -12,7 +12,15 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      
 </head>
-<body class="p-10">
+<body class="">
+
+  <style>
+
+    @media(max-width:768px){
+              
+    }
+
+  </style>
 
     <div class="bg-[#FFFBF0]">
         <div class="flex justify-around ">
@@ -21,29 +29,45 @@
             <h1 class="text-3xl font-bold"><span class=" text-[#A4BC46]">GenZ</span>  Fashion</h1>
         </div>
 
-        <div class=" mt-10">
-            <ul class="list-none flex justify-around gap-5 font-semibold">
-                <li>Home</li>
-                <li>Product</li>
-                <li>About us</li>
-                <li>Contact us</li>
-            </ul>
-        </div>
+        <div class="mt-10">
+          
+  <!-- Hidden Checkbox -->
+  <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+  <!-- Menu Icon -->
+  <label for="menu-toggle" class="md:hidden cursor-pointer">
+    <i class="fa-solid fa-bars text-2xl"></i>
+  </label>
+
+  <!-- Menu Items -->
+  <ul
+    class="list-none text-2xl md:flex justify-around gap-5 font-semibold hidden peer-checked:flex flex-col md:flex-row mt-3">
+    <li>Home</li>
+    <li>Product</li>
+    <li>About us</li>
+    <li>Contact us</li>
+  </ul>
+</div>
+
+          
+
+          
+
     </div>
 
-    <div class="flex justify-around mt-30 items-center">
-        <div>
+    <div class="flex justify-around mt-30 items-center flex-col md:flex-row p-5">
+        <div class="space-y-3 flex flex-col items-center md:items-start">
             <h1 class="text-[#FABE4C] text-3xl font-bold">BE THE GENZS</h1>
             <h1 class="text-black text-3xl font-bold">OF WINTER</h1>
-            <p  class="text-left font-light">Lorem Ipsum is simply dummy text of the printing 
+            <p  class="text-center md:text-left font-light">Lorem Ipsum is simply dummy text of the printing 
 and typesetting industry.</p>
-            <div class="rounded-lg max-w-40 justify-center flex  bg-gradient-to-b from-[#A4BC46] to-[#85A019]" >
-                <img class="size-12" src="./icons/shopping-cart 1.png" alt="">
+            <div class="rounded-lg w-50 justify-center flex  bg-gradient-to-b from-[#A4BC46] to-[#85A019]" >
+                <img class="size-10" src="./icons/shopping-cart 1.png" alt="">
                 <button class="font-bold">BUY NOW</button>
             </div>
         </div>
 
-        <img src="./images/model.png" alt="">
+        <img class="mt-20 md:mt-0 p-10 md:p-0" src="./images/model.png" alt="">
         
 
     </div>
@@ -51,10 +75,11 @@ and typesetting industry.</p>
     </div>
 
 
-    <div class="flex flex-col justify-center mt-20 ">
+    <div class="flex flex-col justify-center items-center mt-20 ">
 
       <h1 class="text-3xl font-bold">WOMAN JACKET</h1>
-      <div class="flex justify-center mt-10 gap-10 ">
+    
+        <div class="flex justify-center mt-10 gap-10 flex-col md:flex-row">
 
         <div class="card max-w-70 shadow-sm p-5  gap-10">
   
@@ -140,13 +165,16 @@ printing and typesetting industry.</p>
 
 
     </div>
+      
+
+
     </div>
 
 
-    <div class="flex flex-col justify-center mt-20 gap-10">
+    <div class="flex flex-col justify-center items-center mt-20 gap-10">
 
       <h1 class="text-3xl font-bold">Man Jacket</h1>
-      <div class="flex justify-center mt-10 gap-10 ">
+      <div class="flex justify-center mt-10 gap-10 flex-col md:flex-row">
 
         <div class="card max-w-70 shadow-sm p-5 ">
   
@@ -236,20 +264,20 @@ printing and typesetting industry.</p>
 
 
 
-    <div class="flex justify-center items-center gap-20 ">
+    <div class="flex justify-center items-center lg:gap-20 flex-col-reverse lg:flex-row mt-20 mb-10 w-full">
       <div class="mt-20 space-y-4">
-      <div class="flex justify-center items-center gap-8  bg-white shadow min-w-[300px] min-h-[130px]">
+      <div class="flex justify-center items-center gap-y-8  bg-white shadow w-full lg:max-w-[600px] min-h-[130px]">
         <div>
           <img class="max-w-[80px]" src="./icons/house.png" alt="">
         </div>
 
-        <div>
+        <div class="">
           <h1 class="text-2xl font-bold">Find the Perfect Fit</h1>
           <p class="text-left">Everybody is different, which is why we offer styles for every body.</p>
         </div>
       </div>
 
-       <div class="flex justify-center items-center gap-8  bg-white shadow min-w-[300px] min-h-[130px]">
+       <div class="flex justify-center items-center gap-8  bg-white shadow  w-full lg:max-w-[600px] min-h-[130px]">
         <div>
           <img class="max-w-[80px]" src="./icons/box.png" alt="">
         </div>
@@ -260,7 +288,7 @@ printing and typesetting industry.</p>
         </div>
       </div>
 
-       <div class="flex justify-center items-center gap-8  bg-white shadow min-w-[300px] min-h-[130px]">
+       <div class="flex justify-center items-center gap-8  bg-white shadow  w-full lg:max-w-[600px] min-h-[130px]">
         <div>
           <img class="max-w-[80px]" src="./icons/question.png" alt="">
         </div>
